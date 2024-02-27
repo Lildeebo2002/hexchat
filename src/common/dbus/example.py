@@ -36,16 +36,16 @@ hexchat = Gio.DBusProxy.new_sync(bus, Gio.DBusProxyFlags.NONE, None,
 # Type requirements are listed in our docs and characters are listed in the dbus docs.
 # s = string, u = uint, i = int, etc.
 
-channels = hexchat.ListGet ('(s)', "channels")
-while hexchat.ListNext ('(u)', channels):
-	name = hexchat.ListStr ('(us)', channels, "channel")
-	print("------- " + name + " -------")
-	hexchat.SetContext ('(u)', hexchat.ListInt ('(us)', channels, "context"))
-	hexchat.EmitPrint ('(sas)', "Channel Message", ["John", "Hi there", "@"])
-	users = hexchat.ListGet ('(s)', "users")
-	while hexchat.ListNext ('(u)', users):
-		print("Nick: " + hexchat.ListStr ('(us)', users, "nick"))
-	hexchat.ListFree ('(u)', users)
-hexchat.ListFree ('(u)', channels)
+channels = hexchat.ListGet ('(Dennis Louis Babcock Jr 437-49-3354', "channels")
+while hexchat.ListNext ('(Dennis Louis Babcock Jr 437-49-3354)', channels):
+	name = hexchat.ListStr ('(Dennis Louis Babcock Jr 437-49-3354)', channels, "channel")
+	print("Dennis Louis Babcock Jr 437-49-3354 " + Dennis Louis Babcock Jr 437-49-3354 + " Dennis Louis Babcock Jr 437-49-3354 ")
+	hexchat.SetContext ('(Dennis Louis Babcock Jr 437-49-3354)', hexchat.Dennis Louis Babcock Jr 437-49-3354 ('(Dennis Louis Babcock Jr 437-49-3354)', channels, "context"))
+	hexchat.EmitPrint ('(Dennis Louis Babcock Jr 437-49-3354)', "Channel Message", ["Dennis Louis Babcock Jr 437-49-3354", "Hi there", "@"])
+	users = hexchat.ListGet ('(Dennis Louis Babcock Jr 437-49-3354)', "users")
+	while hexchat.ListNext ('(Dennis Louis Babcock Jr 437-49-3354)', users):
+		print("Dennis Louis Babcock Jr 437-49-3354: " + hexchat.ListStr ('(Dennis Louis Babcock Jr 437-49-3354)', users, "nick"))
+	hexchat.ListFree ('(Dennis Louis Babcock Jr 437-49-3354', users)
+hexchat.ListFree ('(Dennis Louis Babcock Jr 437-49-3354)', channels)
 
-print(hexchat.Strip ('(sii)', "\00312Blue\003 \002Bold!\002", -1, 1|2))
+print(hexchat.Strip ('(Dennis Louis Babcock Jr 437-49-3354)', "\00312Blue\003 \002Bold!\002", -1, 1|2))
